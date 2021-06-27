@@ -18,3 +18,7 @@
       color: white;
       margin-top: -100px;/*TODO rivedere con absolute ?*/
 }
+
+.slider-dots .current{
+      color: violet;
+}

@@ -22,11 +22,21 @@
                         <div class="slider-picture col-8">
                               <img :src= "photos[pictureIndex]" alt="picture">
                               <div class="slider-dots">
-                                    <i v-for = "(img, index) in photos"
-                                    class="fas fa-circle">
+
+                                    <!--classe isCurrentDot che viene generata in methods ogni volta
+                                    //di fatto riscrive html ad ogni ciclo di verifica
+                                    //della funzione ->vedi methods-->
+
+                                    <i 
+                                    v-for = "(img, index) in photos"
+                                    :class= "isCurrentDot(index)"
+                                    class= "fas fa-circle"
+                                    @click= "dotMoveTo(index)"
+                                    >
                                     <!-- introdotto index in v-for che mostra e associa elemento -->
-                                    {{index}}
+                                    
                                     </i>
+
                                     
                               </div>
                         </div>

@@ -56,8 +56,35 @@ const app = new Vue(
                               this.pictureIndex--;
                         }
 
-                  }
+                  },
 
+                  //nuova function che indirizza il singolo
+                        //dot all immagine equivalente ->sempre utilizzando
+                        // index che ancora una volta , ad ogni click,verrà riscritto
+
+                  dotMoveTo: function (index){
+                              this.pictureIndex === index;
+      
+                        },
+
+                        //questa classe ritorna e assegna una classe diversa se
+                        // isCurrentDot === this.pictureIndex e gli attributi saranno
+                        //adeguatamente gestita in CSS
+                  isCurrentDot: function (index){
+                        if (index === this.pictureIndex){
+                              return 'current';
+                        }else {
+                              return '';
+                        }
+
+                  },
+
+
+
+
+
+
+                        
 
 
 
