@@ -21,6 +21,14 @@
                         </div>
                         <div class="slider-picture col-8">
                               <img :src= "photos[pictureIndex]" alt="picture">
+                              <div class="slider-dots">
+                                    <i v-for = "(img, index) in photos"
+                                    class="fas fa-circle">
+                                    <!-- introdotto index in v-for che mostra e associa elemento -->
+                                    {{index}}
+                                    </i>
+                                    
+                              </div>
                         </div>
                         <div class="col-2 arrow"@click="next">
                               <i class="fas fa-chevron-right"></i>
