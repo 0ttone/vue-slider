@@ -63,7 +63,7 @@ const app = new Vue(
                         // index che ancora una volta , ad ogni click,verrà riscritto
 
                   dotMoveTo: function (index){
-                              this.pictureIndex === index;
+                              this.pictureIndex = index;
       
                         },
 
