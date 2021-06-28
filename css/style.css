@@ -3,21 +3,34 @@
 
 }
 
+.slider-picture{
+      position: relative;
+}
+
 .slider-picture img {
       width: 100%;
+      
 }
 
 .arrow {
       font-size: 32px;
+      text-align: center;
+      color:teal;
+}
+
+.arrow:hover{
+      cursor: pointer;
 }
 
 .slider-dots {
       width: 100%;
-      position: relative;
+      position: absolute;
       text-align: center;
       color: white;
-      margin-top: -100px;/*TODO rivedere con absolute ?*/
+      /*margin-top: -100px;TODO rivedere con absolute ?*/
+      bottom: 50px;
 }
+
 
 .slider-dots .current{
       color: violet;

@@ -27,8 +27,8 @@ const app = new Vue(
                   //il nostro component attuale è app PER ORA ACCONTENTIAMOCI
                   //mettiamo il setInterval in modalità ES6
                   setInterval (()=> {
-                        this.next();
-                  }, 3000)
+                      this.next();
+                  }, 9000)
 
 
             },

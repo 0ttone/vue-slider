@@ -15,12 +15,13 @@
       <div id="app">
 
             <div class="container slider">
-                  <div class="row">
-                        <div class="col-2 arrow" @click="prev">
+                  <div class="row align-items-center">
+                        <div class="col-1 arrow" @click="prev">
                               <i class="fas fa-chevron-left"></i>
                         </div>
-                        <div class="slider-picture col-8">
+                        <div class="slider-picture col-10">
                               <img :src= "photos[pictureIndex]" alt="picture">
+                              
                               <div class="slider-dots">
 
                                     <!--classe isCurrentDot che viene generata in methods ogni volta
@@ -40,7 +41,7 @@
                                     
                               </div>
                         </div>
-                        <div class="col-2 arrow"@click="next">
+                        <div class="col-1 arrow"@click="next">
                               <i class="fas fa-chevron-right"></i>
                         </div>
 
